@@ -5,10 +5,10 @@
  * @b: integer to swap
  */
 void swap_int(int *a, int *b)
-{/
-	int z;
+{
+	int m;
 
-	z = *a;
+	m = *a;
 	*a = *b;
-	*b = z;
+	*b = m;
 }
