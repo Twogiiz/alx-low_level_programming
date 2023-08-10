@@ -2,9 +2,8 @@
 #include <stdlib.h> /* for  malloc funtion */
 /**
  * create_array-creates an array of chars and initializes it with a speficy char.
- ** @size: The size of the array to create.
- * @c: The character to initialize the array with.
- *
+ * @size: The size of the array to create.
+ * @c: The character to initialize the array with.*
  * Return: A pointer to the created array, or NULL if it fails.
  */
 char *create_array(unsigned int size, char c)
