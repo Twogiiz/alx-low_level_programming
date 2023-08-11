@@ -3,7 +3,7 @@
 
 /**
  * _atoi - converts a string to an integer
- * @s: the string to be converted
+ * @s: string to be converted
  *
  * Return: the int converted from the string
  */
@@ -45,6 +45,7 @@ int _atoi(char *s)
 
 	return (n);
 }
+
 /**
  * main - multiplies two numbers
  * @argc: number of arguments
@@ -56,11 +57,13 @@ int main(int argc, char *argv[])
 {
 	int result, num1, num2;
 
-	f (argc < 3 || argc > 3)
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 		return (1);
-	}	num1 = _atoi(argv[1]);
+	}
+
+	num1 = _atoi(argv[1]);
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
 
