@@ -1,4 +1,4 @@
-#include "main.h" 
+#include "main.h"
 
 /**
  * _puts_recursion - Prints a string followed by a new line using recursion
@@ -6,17 +6,18 @@
  *
  * Return: void
  */
-void _puts_recursion(char *s)
+void _puts_recursion(char *s) 
 {
-        /* If string is empty, print new line and return*/
-        if (*s == '\0') {
-                _putchar('\n');
-                return;
-        }
+	/* Base case */
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
 
-        /* Print current character*/
-        _putchar(*s);
-        
-        /* Recursively call on rest of string*/
-        _puts_recursion(s + 1);
+	/* Print current char */
+	_putchar(*s);
+
+	/* Recursive call */  
+	_puts_recursion(s + 1);
 }
