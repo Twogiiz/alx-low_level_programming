@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 /**
- * array iterator - Iterates through an array
+ * array_iterator - Iterates through an array
  * @array: target array
  * @size: array size
  * @action: a function pointer to array
