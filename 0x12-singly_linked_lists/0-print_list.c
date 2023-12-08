@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 	if (h == NULL)
 	{
 		printf("The list is empty.\n");
-		return (node_count);
+		return (n);
 	}
 
 	while (h)
@@ -26,5 +26,5 @@ size_t print_list(const list_t *h)
 			h = h->next;
 			node_count++;
 	}
-	return (node_count);
+	return (n);
 }
