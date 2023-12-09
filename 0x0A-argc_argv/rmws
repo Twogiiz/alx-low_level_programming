@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Check if filename is provided
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 filename"
+    exit 1
+fi
+
+# Filename
+filename=$1
+
+# Remove trailing white spaces
+sed -i 's/[ \t]*$//' "$filename"
